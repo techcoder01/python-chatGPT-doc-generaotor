@@ -275,7 +275,7 @@ async def generate_document(data):
                     f"• “{testimonial['content']}” (Exhibit {len(testimonials) + 1}. {testimonial['author']}, "
                     f"{testimonial['position']}, {testimonial['organization']})"
                 )
-            
+
             self.heading3 += "".join(testimonials)
 
             self.heading3 += (
@@ -345,6 +345,15 @@ async def generate_document(data):
 
     # Prompts
     "introduction": responses['introduction'],
+    "heading1": responses['heading1'],
+    "heading2": responses['heading2'],
+    "heading3": responses['heading3'],
+    "heading4": responses['heading4'],
+    "heading5": responses['heading5'],
+    "heading6": responses['heading6'],
+    "heading7": responses['heading7'],
+    "heading8": responses['heading8'],
+    "heading9": responses['heading9'],
     
 
 }
